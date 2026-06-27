@@ -1,6 +1,7 @@
 <template>
     <div class="page row">
         <div class="col-md-10">
+            <LogoutButton/>
             <InputSearch v-model="searchText" />
         </div>
         <div class="mt-3 col-md-6">
@@ -46,11 +47,14 @@ import ContactCard from "@/components/ContactCard.vue";
 import InputSearch from "@/components/InputSearch.vue";
 import ContactList from "@/components/ContactList.vue";
 import ContactService from "@/services/contact.service";
+
+import LogoutButton from "@/components/LogoutButton.vue";
 export default {
     components: { 
         ContactCard, 
         InputSearch, 
         ContactList,
+        LogoutButton,
     }, 
    data() {
         return {

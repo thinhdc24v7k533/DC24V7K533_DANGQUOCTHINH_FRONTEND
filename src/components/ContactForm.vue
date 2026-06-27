@@ -27,8 +27,17 @@
             </label>
         </div>
         <div class="form-group">
+            <label>Yêu thích</label>
+            <div class="border border-top rounded p-2">
+                <input type="checkbox" value="Ăn uống" v-model="contactLocal.hobbies" /> Ăn uống
+                <input type="checkbox" value="Chơi game" v-model="contactLocal.hobbies" /> Chơi game
+                <input type="checkbox" value="Đọc sách" v-model="contactLocal.hobbies" /> Đọc sách
+                <input type="checkbox" value="Thể thao" v-model="contactLocal.hobbies" /> Thể thao
+                <input type="checkbox" value="Du lịch" v-model="contactLocal.hobbies" /> Du lịch
+            </div>
+         </div>
+        <div class="form-group">
             <button class="btn btn-primary">Lưu</button>
-            
             <button v-if="contactLocal._id" type="button" class="ml-2 btn btn-danger" @click="deleteContact">
                 Xóa
             </button>

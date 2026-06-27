@@ -28,5 +28,11 @@ contact: { type: Object, required: true },
 <i v-if="contact.favorite" class="fa-solid fa-circle-check"></i>
 <i v-else class="fa-solid fa-circle-xmark"></i>
 </div>
+<div class="p-1">
+<strong>Sở thích:</strong>
+<span v-for="hobby in contact.hobbies" :key="hobby" class="badge bg-info mx-1">
+{{ hobby }}
+</span>
+</div>
 </div>
 </template>
